@@ -4,8 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <form action="" id="calcularprecio">
+
+        <div>
+            <h2>cantidad</h2>
+            <label for="cantidad">cantidad
+                <input name="cantidad" id="cantidad"
+                value="1">
+            
+            </label>
+        </div>
+
+
+        <div>
+            <H2>Tamaño</H2>
+            <label for="chico">
+            <input type="radio" name="tam" id="chico">
+            chico
+            </label>
+            <br>
+
+            <label for="mediano">mediano</label>
+            <input type="radio" name="tam" id="mediano">
+            <br>
+
+            <label for="grande">grande</label>
+            <input type="radio" name="tam" id="grande">
+
+        </div>
+
+        <div>
+            <h2>tipo de pan</h2>
+            
+            <label for="integral">integral</label>
+            <input type="radio" name="pan" id="integral">
+            <br>
+
+            <label for="blanco">blanco</label>
+            <input type="radio" name="pan" id="blanco">
+            <br>
+            
+            <label for="papa">papa</label>
+            <input type="radio" name="pan" id="papa">
+            <br>
+            <label for="parmesano">parmesano</label>
+            <input type="radio" name="pan" id="parmesano">
+            <br>
+
+        </div>
+
+        <div>
+            <h2>ingredientes</h2>
+            <label for="tomate">tomate</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="cebolla">cebolla</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="jamon">jamon</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="tocino">tocino</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="piña">piña</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="queso">queso</label>
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="mostaza">mostaza</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="champiñones">champiñones</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="salami">salami</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+            <label for="peperoni">peperoni</label>
+            <input type="checkbox" name="" id="">
+            <br>
+
+        </div>
+
+        <div>
+            <label for="combo">
+                quieres hacerlo combo? (incluye refesco y papas)
+                <select name="combo" id="combo">
+                    <option value="si">si</option>
+                    <option value="no">no</option>
+                </select>
+            </label>
+        </div>
+
+
+        <div>
+            <button type="button">precio</button>
+            <label for="total a pagar">
+                total a pagar
+                <input type="number" name="total" id="total">
+                
+            </label>
+        </div>
+
+    </form>
+
+    <script src="calculos.js"></script>
 </body>
 </html>
