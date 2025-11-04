@@ -11,9 +11,10 @@
     <form action="" id="calcularprecio">
 
         <div>
-            <h2>cantidad</h2>
-            <label for="cantidad">cantidad
-                <input name="cantidad" id="cantidad"
+            <label for="cantidad">
+                cantidad
+                <input type="number"
+                name="cantidad" id="cantidad"
                 value="1">
             
             </label>
@@ -112,16 +113,16 @@
 
 
         <div>
-            <button type="button">precio</button>
-            <label for="total a pagar">
+            <button type="button" onclick="calcular()">precio</button>
+            <label for="total">
                 total a pagar
-                <input type="number" name="total" id="total">
+                <input type="number" name="total" id="total" readonly>
                 
             </label>
         </div>
 
     </form>
 
-    <script src="calculos.js"></script>
+    <script src="calculo.js"></script>
 </body>
 </html>
