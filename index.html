@@ -5,8 +5,88 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+ <style>
+
+body {
+    font-family: sans-serif;
+    background-image: url(img/desktop-wallpaper-best-4-mcdonalds-backgrounds-on-hip-mcdonalds-restaurants.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#calcularprecio {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border: 2px solid #FF0000; 
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    color: #FF0000; 
+    border-bottom: 2px solid #FFD700; 
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#calcularprecio > div {
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+
+#cantidad, #total {
+    background-color: #FFFACD; 
+    border: 1px solid #FFD700; 
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #FF0000; 
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #CC0000;
+}
+
+
+#calcularprecio > div:last-child label {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.imagen-columna-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ </style>   
 </head>
 <body>
+
+<body>
+
+    
+
+    <div class="imagen-columna-container">
+        <img src="img/mcdonalds-burger.gif" alt="Un GIF animado" width="200" height="200">
+        <img src="img/giphy.gif" alt="Una hamburguesa animada" width="200" height="200">
+    </div>
 
     <form action="" id="calcularprecio">
 
@@ -24,17 +104,19 @@
         <div>
             <H2>Tamaño</H2>
             <label for="chico">
-            <input type="radio" name="tam" id="chico">
+            <input type="radio" name="tam" id="chico" value="chico">
             chico
             </label>
             <br>
 
-            <label for="mediano">mediano</label>
-            <input type="radio" name="tam" id="mediano">
+            <label for="mediano">
+            <input type="radio" name="tam" id="mediano" value="mediano" >
+            mediano</label>
             <br>
 
-            <label for="grande">grande</label>
-            <input type="radio" name="tam" id="grande">
+            <label for="grande">
+            <input type="radio" name="tam" id="grande" value="grande">
+            grande</label>
 
         </div>
 
@@ -113,7 +195,7 @@
 
 
         <div>
-            <button type="button" onclick="calcular()">precio</button>
+            <button type="button" onclick="calcular()">calcular precio</button>
             <label for="total">
                 total a pagar
                 <input type="number" name="total" id="total" readonly>
@@ -122,6 +204,7 @@
         </div>
 
     </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0G0CTbZ2VPI?si=dljKnzMbv8U0-qT7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <script src="calculo.js"></script>
 </body>
