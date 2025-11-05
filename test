@@ -1,0 +1,101 @@
+var formulario = document.getElementById("calcularprecio");
+
+function calcular() {
+
+var tamano = formulario.tam.value;
+
+alert(tamano);
+
+var total = 0;
+
+    if (tamano == "chico")
+    {
+        total = 100;
+    }
+    else if (tamano == "mediano")
+    {
+        total = 150;
+    }
+    else if (tamano == "grande")
+    {
+        total = 200;
+    }
+
+    if (pan == "integral")
+    {
+        total = total + 20;
+    }
+    else if (pan == "blanco")
+    {
+        total = total + 0;
+    }
+    else if(pan == "papa")
+    {
+        total = total + 25;
+    }
+    else if(pan == "parmesano")
+    {
+        total = total + 30;
+    }
+    else {
+        alert("Por favor selecciona un tipo de pan");
+        return;
+    }
+
+      if (formulario.tomate.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.cebolla.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.jamon.checked)  
+    {
+        total += 10;
+    }
+
+    if (formulario.tocino.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.piña.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.queso.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.mostaza.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.champiniones.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.salami.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.peperoni.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.combo.value == "Si")
+    {
+        total += 50;
+    }
+    
+    formulario.total.value = total * cantidad;
+}   que agrege el resultado

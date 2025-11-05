@@ -1,7 +1,15 @@
 var formulario = document.getElementById("calcularprecio");
 
 
-
+function getRadioValue(radioName) {
+    var radios = formulario.elements[radioName];
+    for (var i = 0, len = radios.length; i < len; i++) {
+        if (radios[i].checked) {
+            return radios[i].value;
+        }
+    }
+    return null;
+}
 
 function calcular() {
     var total = 0;
